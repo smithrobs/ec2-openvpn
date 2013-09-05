@@ -13,16 +13,16 @@ Requirements
 * Various npm modules (see package.json)
 * A lil' config file (default location is '~/.robot.aws'):
 
-    {
-      "key": "[Your EC2 key]"
-    , "secret": "[Your EC2 secret]"
-    , "endpoint": "[EC2 endpoint] Example: us-east-1"
-    , "imageId": "[EC2 image to start] Example: ami-abcdef01"
-    , "keyName": "[EC2 keyset to use]"
-    , "securityGroup": "[EC2 security group to use]"
-    , "openvpnUser": "[username of OpenVPN instance]"
-    , "openvpnPass": "[password of OpenVPN instance]"
-    }
+        {
+          "key": "[Your EC2 key]"
+        , "secret": "[Your EC2 secret]"
+        , "endpoint": "[EC2 endpoint] Example: us-east-1"
+        , "imageId": "[EC2 image to start] Example: ami-abcdef01"
+        , "keyName": "[EC2 keyset to use]"
+        , "securityGroup": "[EC2 security group to use]"
+        , "openvpnUser": "[username of OpenVPN instance]"
+        , "openvpnPass": "[password of OpenVPN instance]"
+        }
 
 How do I use this thing?
 ========================
@@ -30,12 +30,14 @@ How do I use this thing?
 2. npm install
 3. node app.js
 4. Import the downloaded .ovpn file in your OpenVPN client of choice (Tunnelblick is my current favorite.)
+5. Enjoy pretending that your network traffic is safe from prying eyes!
 
 TODO
 ====
 * I want to switch this over to Spooky so it doesn't have to call Casper directly.
 * I have notes on how to set up the OpenVPN instance. Might blog/publish/whatever them someday.
 * One might scoff at all those credentials lying out on your disk.
+* Automate the import and connection via Tunnelblick.
 
 Anything else?
 ==============
