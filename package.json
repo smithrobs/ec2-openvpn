@@ -1,0 +1,14 @@
+{
+  "name": "ec2-openvpn",
+  "description": "EC2 OpenVPN automator",
+  "author": "Rob Smith <smith.rob.s@gmail.com>",
+  "version": "1.0.0",
+  "dependencies": {
+    "ec2": "0.1.1",
+    "phantom": "0.5.2",
+    "spooky": "0.2.3"
+  },
+  "devDependencies": {
+  },
+  "engine": "node >= 0.10.0"
+}
